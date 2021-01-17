@@ -1,7 +1,6 @@
 package com.rkjha.springdemo;
 
-public interface Coach {
-    public String getDailyWorkout();
 
+public interface Fortune {
     public String getMyFortune();
 }
