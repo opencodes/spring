@@ -1,10 +1,9 @@
 package com.rkjha.hibernet;
 
+import com.rkjha.hibernet.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import com.rkjha.hibernet.entity.Student;
 
 public class CreateStudentDemo {
 
@@ -29,7 +28,7 @@ public class CreateStudentDemo {
 			
 			// commit transaction
 			session.getTransaction().commit();
-			
+			factory.close();
 		} catch (Exception e) {
 			// TODO: handle exception
 			factory.close();
